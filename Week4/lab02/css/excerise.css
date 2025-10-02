@@ -1,0 +1,29 @@
+body
+{
+    background-color: #e0ffff;
+    text-decoration-color: navy;
+    font-family: Garamond, serif;
+}
+h3
+{
+    background-color: blue;
+    text-decoration-color: white;
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: underline;
+}
+p
+{
+    font-family: verdana,Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration-color: 000080;
+}
+address
+{
+    size-adjust: 110%;
+}
+blockquote
+{
+   text-transform: capitalize; 
+   text-align: center;
+}
