@@ -1,0 +1,22 @@
+tbody tr:nth-of-type(odd) {
+  background-color: #ddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+thead tr:first-of-type {
+ background-color:blue;
+ color:white;
+}
+
+td:first-of-type {
+ font-weight:bold;
+}
+
+tbody tr:hover {
+  cursor:pointer;
+  background-color: gray;
+  color: white;
+}

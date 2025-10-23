@@ -1,0 +1,7 @@
+p:nth-of-type(2) {
+  background: red;
+}
+
+p:nth-of-type(3) /*targets the third paragraph it finds*/
+tr:nth-of-type(odd) /*targets the odd rows of a table*/
+td:nth-of-type(n+2) /*targets the table columns, starting with the second column*/
