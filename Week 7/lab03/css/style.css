@@ -7,6 +7,10 @@ html, body {
 
 body{
  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+ background-image: url(../images/cafe.jpeg);
+ background-repeat: no-repeat;
+ background-size:cover;
+ background-attachment: fixed;
 }
 
 #content{
@@ -15,6 +19,11 @@ body{
     position: absolute;
     top: 1em;
     right: 0.5em;
+    background-image: url(../images/coffee.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: white;
+    text-decoration: black;
 }
 
 h1, h2{

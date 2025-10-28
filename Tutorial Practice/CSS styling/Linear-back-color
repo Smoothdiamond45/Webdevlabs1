@@ -1,0 +1,73 @@
+#grad1 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background: linear-gradient(red, yellow);
+}
+
+<h3>Linear Gradient - Top to Bottom</h3>
+<p>This linear gradient starts at the top. It starts red, transitioning to yellow.</p>
+
+<div id="grad1"></div>
+
+
+
+#grad2 {
+    height: 200px;
+    background-color: blue; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, blue, green);
+}
+
+<h3>Linear Gradient - Left to Right</h3>
+<p>This linear gradient starts at the left and goes to the right. It starts blue, transitioning to green.</p>
+
+<div id="grad2"></div>
+
+
+#grad3 {
+    height: 200px;
+    background-color: green; /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+
+<h3>Linear Gradient - Top left to Bottom right</h3>
+<p>This linear gradient starts at the top left and goes towards the bottom right. It has multiple colour stops: red, orange, yellow, green, blue, indigo, and violet - all the colours of the rainbow!</p>
+
+<div id="grad3"></div>
+
+#grad1 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background: radial-gradient(red, yellow);
+}
+
+<h3>Radial Gradient - Ellipse</h3>
+<p>This radial gradient uses the default shape: an ellipse. It starts red in the centre, transitioning outwards to yellow.</p>
+
+<div id="grad1"></div>
+
+
+#grad2 {
+    height: 200px;
+    background-color: blue; /* For browsers that do not support gradients */
+    background: radial-gradient(circle, blue, green);
+}
+
+<h3>Radial Gradient - Circle</h3>
+<p>This radial gradient uses the circle shape. It starts blue, transitioning outwards to green.</p>
+
+<div id="grad2"></div>
+
+
+#grad3 {
+    height: 200px;
+    background-color: green; /* For browsers that do not support gradients */
+    background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+}
+
+
+<h3>Radial Gradient - Circle, multiple colours</h3>
+<p>This radial gradient also uses the circle shape. It has multiple colour stops: red, orange, yellow, green, blue, indigo, and violet - all the colours of the rainbow!</p>
+
+<div id="grad3"></div>
+

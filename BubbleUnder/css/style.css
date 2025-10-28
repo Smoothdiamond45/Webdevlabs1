@@ -6,6 +6,10 @@ h1, h2{
     color: white;
     background-color: #0000ff;
 }
+h1{
+  background: navy url(../images/backgrounds/header-bg.jpg) repeat-y right bottom;
+
+}
 ul {
 	list-style-type:none;
 }
@@ -39,10 +43,15 @@ img.feature {
 }
 
 nav {
-  background-color: dodgerblue;
-  flex: 1;
+	flex: 1;
+	height: 484px;
+    background:  url(../images/backgrounds/nav-bg.jpg) no-repeat;
 }
 
+#tagline{
+  background: #bed8f3 url(../images/backgrounds/tagline-fade.jpg) repeat-y right;
+
+}
 main {
   flex:5;
 }
@@ -68,4 +77,66 @@ nav ul li a:active {
 main {
   flex:5;
   padding-left:1em;
+}
+
+table#events th, table#events td {
+  padding: .3em;
+  border:solid black 1px;
+}
+
+table#events {
+  border-collapse: collapse;
+  border:solid black 1px;
+  width:95%;
+}
+
+table#events th {
+  font-size: medium;
+  text-align: left;
+  background: #241374;
+  color: #ffffff;
+  border-color:#000066;
+  padding: 0 .5em;
+}
+
+table#events td {
+  font-size: small;
+}
+
+table.events caption {
+  color: #000066;
+  font-size: small;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: .5em;
+}
+
+table#events tr:nth-of-type(even){
+  background-color: #ADD8E6;
+}
+table#events tr:nth-of-type(odd) {
+  background-color:#B0C4DE;
+}
+
+table#events tr:hover {
+  background: #c5e3ed;
+}
+
+figure {
+  border-bottom: 1px solid navy;
+  margin-bottom: 2%;
+}
+
+figcaption {
+  color:navy;
+  font-size: 75%;
+  font-weight: bold;
+  margin-top: 0;
+  width: 90%;
+  line-height: 1.4em;
+}
+
+figcaption span {
+  font-weight: normal;
+  color: gray;
 }
