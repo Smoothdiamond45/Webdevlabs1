@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regestration Form</title>
+    </head>
+<body>
+    
+    <form action="" onsubmit="return validateform()">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" required><br />
+        
+        <label for="password">password: </label>
+        <input type="password" id="password" name="password" required><br />
+        
+        <label for="confirmPassword">confirmPassword:</label>
+        <input type="confirmPassword" id="confirmPassword" name="confirmPassword" required><br />
+        
+        <label for="email">email:</label>
+        <input type="text" id="email" name="email" required><br />
+        
+        <input type="submit" value="Register"><br />
+
+    </form>
+    <p id="errorMessage" style="color: red;" ></p>
+</body>
+    <script>
+    function validateform(){
+        //store the user input onto the following variables
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+        var email = document.getElementById("email").value;
+        var errorMessages = document.getElementById("errormessages");
+        //resets the error message
+        errorMessages.innerHTML = "";
+        
+        if(username.length <6){
+            alert("username must be at least 6 characters long");
+            errorMessages.innerHTML +="username must be at least 6 characters long <br />";
+            return false;
+        }else{
+            return true;
+        } 
+
+        if(password.length <8){
+            alert("password must be at least 8 characters long");
+            errorMessages.innerHTML +="password must be at least 8 characters long <br />";
+            return false;
+        }else{
+            return true;
+    }
+    }
+    </script>
+</html>

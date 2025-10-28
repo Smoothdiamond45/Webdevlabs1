@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .sticky-nav {
+      background-color: #333;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+    .sticky-nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 15px;
+    }
+
+    .content {
+      padding: 60px 20px;
+    }
+
+    /* Style for the sticky effect */
+    .sticky-nav.sticky {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="sticky-nav" id="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="content">
+    <!-- Your page content goes here -->
+    <h1>Welcome to Your Website</h1>
+    <p>This is the main content of your website.</p>
+  </div>
+
+  <script>
+    window.onscroll = function() { stickyNavbar() };
+
+    const navbar = document.getElementById("navbar");
+    const sticky = navbar.offsetTop;
+
+    function stickyNavbar() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>
