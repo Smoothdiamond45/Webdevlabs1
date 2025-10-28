@@ -1,0 +1,52 @@
+Formula	Explanation
+tr:nth-of-type(n)	Selects all table rows.
+tr:nth-of-type(n+2)	Selects all table rows except
+the first row (starting with the second row).
+tr:nth-of-type(2n)	Selects every second row of the table.
+tr:nth-of-type(3n)	Selects every third row of the table.
+tr:nth-of-type(2n+4)	Selects every other row of the table,
+starting with the fourth row.
+td:nth-of-type(2)	Selects the second column.
+td:nth-of-type(2n)	Selects every second column of the table.
+td:nth-of-type(-n+3)	Selects first three columns of the table.
+
+each even row (tbody tr:nth-of-type(even))
+each odd row (tbody tr:nth-of-type(odd))
+all columns starting with the second column (tbody td:nth-of-type(n+2))
+the last row and column (tbody tr:last-of-type, tbody td:last-of-type)
+the second last row (tbody tr:nth-last-of-type(2))
+the table data inside the last 3 rows (tbody tr:nth-last-of-type(-n+3) td)
+adding a hover effect to all rows in the tbody section (tbody tr:hover)
+
+tbody tr:nth-of-type(even){
+ background-color: #F3F3F3;
+}
+
+tbody tr:nth-of-type(odd) {
+ background-color:#ddd;
+}
+
+tbody td:nth-of-type(n+2){
+ text-align: right;
+}
+
+tbody tr:last-of-type,  tbody td:last-of-type {
+ font-weight: bold;
+ font-size:1.25em;
+}
+
+
+tbody tr:nth-last-of-type(2){
+ color: red;
+}
+
+tbody tr:nth-last-of-type(-n+3) td{
+ text-align: right;
+}
+
+tbody tr:hover 
+{
+ cursor:pointer;
+ background-color: #808080;
+ color: #dadada;
+}

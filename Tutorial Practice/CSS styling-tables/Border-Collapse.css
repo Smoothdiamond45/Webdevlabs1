@@ -1,0 +1,47 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+
+table, th, td — This is a grouped selector that applies the same styles to all <table>, <th>, and <td> elements.
+
+border: 1px solid black; — Gives each of these elements a 1-pixel solid black border, so the table and its cells have visible outlines.
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+
+table — Targets only the <table> element.
+
+border-collapse: collapse; — Makes adjacent table borders collapse into a single border instead of showing double borders between cells.
+
+width: 50%; — Sets the table’s width to half the width of its parent container.
+
+th {
+  text-align: left;
+  background-color: gray;
+  color: white;
+  padding: 0.2em;
+}
+
+
+th — Targets all table header cells (<th> elements).
+
+text-align: left; — Aligns the header text to the left.
+
+background-color: gray; — Gives header cells a gray background.
+
+color: white; — Sets the text color in headers to white.
+
+padding: 0.2em; — Adds a small amount of space inside each header cell to improve readability.
+
+td {
+  padding: 0.2em;
+}
+
+
+td — Targets all table data cells (<td> elements).
+
+padding: 0.2em; — Adds the same internal spacing to each cell as the header, keeping the layout consistent.
