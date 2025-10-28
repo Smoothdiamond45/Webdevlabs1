@@ -1,0 +1,33 @@
+.nav {
+      background-color: lightblue;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .nav a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav a:hover {
+      background-color: white;
+    }
+    h1{
+      text-align: center;
+      font: bold;
+      font-family: 'Courier New', Courier, monospace;
+      color: lightblue;
+    }
+table {
+  background-color: lightblue;
+  border-color: black;
+  
+}
+td,th,tr{
+  text-align: center;
+  color: black;
+}
