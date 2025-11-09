@@ -73,6 +73,9 @@ body {
   margin: 0 auto; 
   position: relative; 
   padding: 20px;
+   display: block;
+  text-align: center;
 }
+
 
 
