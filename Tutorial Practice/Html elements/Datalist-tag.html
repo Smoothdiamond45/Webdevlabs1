@@ -1,0 +1,28 @@
+<label for = "myBrowser">Choose a browser from this list:</label>
+<input type = "text" list="browsers" name="myBrowser" id = "myBrowser">
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Internet Explorer">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
+//The datalist element provides an “autocomplete” feature for input elements. 
+//The list of options is defined within the datalist element, 
+//and the input element must refer to the datalist’s id attribute via its list attribute.
+
+
+<input type="color" id="color" name="color" value="#000000" list="colors">
+<datalist id="colors">
+  <option>#ff0000</option>
+  <option>#00ff00</option>
+  <option>#0000ff</option>
+  <option>#ffff00</option>
+  <option>#00ffff</option>
+</datalist>
+
+//In this example, the input element is of type color,
+//which provides a color picker. 
+//The datalist element provides a list of suggested colors
+//that the user can choose from if they wish.

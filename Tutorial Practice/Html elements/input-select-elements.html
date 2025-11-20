@@ -1,0 +1,38 @@
+<div class="form-row">
+    <label for="name">Name</label>
+    <input type="text" id="name" name = "name">
+</div>
+
+//The select element is used to create a drop-down list. 
+//The options within the drop-down list are defined using the option element.
+
+
+The elements will be styled to become flex containers and the flex-direction will default to row. 
+This will ensure that the label and form element are on the same row. 
+The div (with class = .form-row) is styled as follows:
+
+.form-row {
+   	display: flex;
+}
+
+//The label (flex item) will be assigned a width of 20%. 
+The element label is styled as follows:
+.form-row > label {
+    flex: 0 1 20%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+
+n the row, the form element (text box or select menu) is also a flex item and it will grow to take up the remaining space on the row. 
+If we do not allow the form element to grow, the the form element from row to row will vary in size. 
+So, to ensure on each row that the form elements have the same size, allow them to grow. 
+The form element is styled as follows:
+
+
+form input, form select {
+    flex: 1; 
+    padding: .5em;
+    margin-bottom: 1em;
+}

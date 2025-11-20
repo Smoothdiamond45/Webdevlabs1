@@ -1,0 +1,23 @@
+<label for = "email3">E-mail address: </label>
+<input type="text" name="email3" id = "email3" size="20" >
+<br><br>
+<div class = "extras">
+  Please select which format you would like to receive our newsletter in:<br>
+  <label for = "text">
+  <input type="radio" name="format" id = "text" value="text" checked="checked"> Text</label>
+  <label for = "html">
+  <input type="radio" name="format" id = "html" value="html"> HTML</label>
+  <label for = "pdf">
+  <input type="radio" name="format" id = "pdf" value="pdf"> Adobe Acrobat</label>
+</div>
+
+
+//The key difference between this and the checkbox example is that, 
+in this case, we have three different options,
+ yet the name attribute is the same for all three inputs. 
+ This is essential: it’s this value that binds the three inputs together. 
+ They share the same name, but each has a different value attribute. 
+ As a user selects an option and submits the form, the appropriate value is sent to the server. 
+ Note also that each input has a different id. 
+ In fact, any id that is assigned to an element in the document must be unique. 
+ It also benefits the label elements, which must refer to unique identifiers.

@@ -1,0 +1,37 @@
+<fieldset class="check">
+    <legend>Which taxi do you require?</legend>
+    <label> <input type="radio" id="taxi_car" name = "taxi" value="car"> Car </label>
+    <label> <input type="radio" id="taxi_van" name = "taxi" value="van"> Van </label>
+    <label> <input type="radio" id="taxi_tuk" name = "taxi" value="tuktuk"> Tuk Tuk </label>
+</fieldset>
+
+<fieldset class="check">
+    <legend>Extras</legend>
+    <label> <input type="checkbox" id="extras_baby" value="baby"> Baby Seat </label>
+    <label> <input type="checkbox" id="extras_wheel" value="wheelchair"> Wheelchair Access </label>
+    <label> <input type="checkbox" id="extras_tip" value="tip"> Stock Tip </label>
+</fieldset>
+
+//In this example, we have two fieldsets. 
+//The first contains three radio buttons, allowing the user to select one of three taxi types. 
+//The second fieldset contains three checkboxes, allowing the user to select any combination of three extra services. 
+//Note that the radio buttons all share the same name attribute (taxi),
+//which groups them together so that only one can be selected at a time. 
+//The checkboxes do not share the same name attribute,
+//which allows the user to select any combination of options.
+
+
+
+
+fieldset {
+     border: solid black 1px; 
+     margin-bottom:1em;
+}
+
+.check > label {
+     display: block;
+}
+//The CSS above styles the fieldset elements to have a solid black border
+//and a margin below each fieldset. 
+//In addition, the labels within the fieldsets are styled to be block elements,
+//which causes each label to appear on a separate line. 

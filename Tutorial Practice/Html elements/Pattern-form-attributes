@@ -1,0 +1,14 @@
+The pattern attribute specifies a regular expression that the <input> element’s value is checked against.
+
+Examples:
+
+Example	Pattern
+All alphanumeric characters	 - pattern=“[a-zA-Z0-9]”
+Three letter code	         - pattern=“[A-Za-z]{3}”
+Name (with optional second name, and more names…)	   -   pattern = “[A-Z][a-z]+( [A-Z][a-z]+)?”
+At least 6 characters (excluding space, tab, newline, carriage return, form feed)	pattern =“\S{6,}”
+Matches at least 4 digits but no more than 8 digits	pattern=“\d{4,8}”
+Telephone number (9 - 12 digits), which allows for brackets and hyphens(-)	pattern = "^((\d{3})|(\(\d{3}\)))[- ]?\d{3}[- ]?\d{3,4}$"
+URL	pattern=       -  “https?😕/[a-zA-Z]{3}.[a-zA-Z0-9]{2,}.[a-zA-Z0-9]{2,}”
+Email address	pattern =   -   “[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$”
+Password which at least 6 characters which include at least one capital letter and at least one number	pattern=“^(?=.\d)(?=.[a-z])(?=.[A-Z])(?!.\s).{6,}$”

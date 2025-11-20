@@ -1,0 +1,49 @@
+<form name = "test" id = "test" method = "POST" action="processform.htm">
+<label for  = "email">Enter your e-mail address:</label>
+<input type="email" name="email" id="email" size="30">
+<p>
+<br><input style="float:left" type="radio" name="action" id = "subscribe" value="subscribe">
+<label for = "subscribe" style="float:left"> Subscribe</label>
+<br><input style="clear:left; float:left" type="radio" name="action" id = "unsubscribe" value="unsubscribe" checked="checked">
+<label for = "unsubscribe" style="float:left"> Unsubscribe</label>
+</p>
+<p>
+<br>
+<input style="clear:left" type="submit">
+</p>
+</form>
+
+//The form above contains two radio buttons that allow the user to choose between subscribing and unsubscribing from a mailing list.
+When the form is submitted, the value of the selected radio button is sent to the server along with the e-mail address.
+The name attribute for both radio buttons is the same (action),
+    which groups them together.
+This ensures that only one of the options can be selected at any one time.
+The value attribute for each radio button is different (subscribe and unsubscribe),
+    which is the value that is sent to the server when the form is submitted.
+
+
+
+
+    Reset button
+<form name = "tutorial" id = "tutorial" action="processform.htm" onreset="document.tutorial.name.focus();">
+<label for  = "name">Enter your name:</label>
+<input type="text" name="name" id = "name" size="20">
+<p>
+<label for  = "email2">Enter your e-mail address:</label>
+<input type="email" name="email2" id = "email2" size="30">
+</p>
+<p>
+<br><input style="float:left" type="radio" name="action" id = "subscribe" value="subscribe">
+<label for = "subscribe" style="float:left"> Subscribe</label>
+<br><input style="clear:left; float:left" type="radio" name="action" id = "unsubscribe" value="unsubscribe" checked="checked">
+<label for = "unsubscribe" style="float:left"> Unsubscribe</label>
+</p>
+<p>
+<br>
+<input style="clear:left" type="submit">
+<input type="reset" value = "Start Over">
+</form>
+
+//The reset button in the form above will clear all user input and return the form to its initial state. 
+In addition, the onreset event handler is used to set the focus to the name text box
+ so that the user can begin entering their details again immediately.
