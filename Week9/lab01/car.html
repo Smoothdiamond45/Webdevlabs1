@@ -19,37 +19,75 @@
             <div class="form-row">
               <label for="contactname">Name</label>
               <input
+              pattern="[A-Za-z ]+"
+              required
                 type="text"
                 name="contactname"
-                id="contactname"
-              >
+                id="contactname"   
+                title="Please enter your name, no numbers, special characters"           >
             </div>
-            <form action="process.html" method="get" id="booking">
+
             <div class="form-row">
               <label for="email">Email</label>
               <input
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
+              required
                 type="email"
                 name="email"
                 id="email"
+                title="Please enter your email address with the appropriate @"
               >
             </div>
-            <form action="process.html" method="get" id="booking">
+
+
               <div class="form-row">
                  <label for="Driver-licence">Do you have a Valid Driver's Licence</label>
                 <label> <input type="checkbox" id="license" value="yes"> Yes </label>
                 <label> <input type="checkbox" id="license" value="no"> No </label>
               </div>
-            </form>
-            <form action="process.html" method="get" id="booking">
+
+
             <div class="form-row">
               <label for="age">Age</label>
               <input
+              required
                 type="age"
                 name="age"
                 id="age"
+                title="Please enter your age, only digits"
               >
             </div>
-            
+
+
+            <div class="form-row">
+              <label for="start_date">Booking date</label>
+              <input type="date" name="booking_date" id="booking-date"
+              required
+              title="Please choose a start date">
+            </div>
+
+
+            <div class="form-row">
+              <label for="car">Car</label>
+              <select name="platform" id="platform">
+              <option value="ford">Ford Focus</option>
+              <option value="hyundai">Hyundai Tucson</option>
+              <option value="toyota">Toyota Rav4</option>
+              <option value="renault">Renault Kadjar</option>
+              <option value="datson">Nissan Qashqai</option>
+              </select>
+              </div>
+
+
+              <legend>Please provide any other details you think will be useful to us in the text area below</legend>
+              <textarea name="comments" id= "comments" rows="5" collums="15">
+              </textarea>
+
+              <div class="form-row">
+              <input type="submit" value="Submit">
+              <input type="reset" value = "Start Over">
+              </div>
+              </form>
         </section>
         <section id="image">
           <figure>
